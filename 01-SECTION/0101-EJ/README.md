@@ -1,4 +1,4 @@
-# Sección 01: Ejemplo 01
+# Sección 01: Ejemplo 01. Ejemplo sin border box
 Ejemplo en el que se ven los cambios producidos por el cambio de tamaño en una caja al añadirle paddings y borders sin establecer la propiedad *box-sizing: border-box*
 Incialmente la caja tendrá un tamaño de 16rem (tamaño absoluto)
 ```
