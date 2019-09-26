@@ -31,5 +31,7 @@
 /**
     PASO 3:
     Añadido a todos los elementos
-
+*, *::before, *::after, *:before, *:after {
+    box-sizing: border-box;
+}
 */
