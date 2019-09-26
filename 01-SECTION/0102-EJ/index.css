@@ -1,0 +1,37 @@
+/**
+    PASO 1:
+    Las cuatro cajas del html podrán alinearse ya que ocupan todas el 25%, pero si añadimos un borde o un padding nos bajará una caja a la línea siguiente
+*/
+.box {
+    width: 25%;
+    height: 20rem;
+    background-color: salmon;
+    color: white;
+    float: left;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+/**
+    PASO 2:
+    Con el box-sizing: border-box el border y padding se incluye dentro del tamaño de la caja
+    Añadido el box-sizing: border-box pero solo al elemento
+.box {
+    box-sizing: border-box;
+    width: 25%;
+    height: 20rem;
+    background-color: salmon;
+    color: white;
+    float: left;
+    padding: 2rem;
+    border: 1px solid black;
+}
+*/
+
+/**
+    PASO 3:
+    Añadido a todos los elementos
+*, *::before, *::after, *:before, *:after {
+    box-sizing: border-box;
+}
+*/
