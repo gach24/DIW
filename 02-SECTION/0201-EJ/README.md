@@ -1,4 +1,4 @@
-# Sección 02. Ejemplo 01
+# Sección 02. Ejemplo 01. Introducción a Sass
 ## Ejemplo de declaración de variable
 Se declara una variable y se establece el color
 ```
