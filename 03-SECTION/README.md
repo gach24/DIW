@@ -9,3 +9,8 @@
 - Ocupan todo el ancho disponible 
 - Tienen dimensiones modificables (alto y ancho)
 - No permiten otros elementos a su lado (aunque especique un ancho, sigue ocupando todo el espacio disponible)
+
+## Elementos inline-block
+- Mezcla de inline y block
+- Tienen dimensiones modificables (alto, ancho)
+- Permiten otros elementos a su lado. Si no especifico dimensiones, ocupa lo que ocupe su contendido
