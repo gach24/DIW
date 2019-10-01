@@ -14,3 +14,6 @@
 - Mezcla de inline y block
 - Tienen dimensiones modificables (alto, ancho)
 - Permiten otros elementos a su lado. Si no especifico dimensiones, ocupa lo que ocupe su contendido
+### Consideraciones sobre los elementos inline-block
+- **vertical-align** alinea elementos entre ellos (no su contenido dentro)
+- Espacios no deseables entre elementos y en imagenes dentro de contenedores. [Ver enlace](https://davidwalsh.name/remove-whitespace-inline-block)
