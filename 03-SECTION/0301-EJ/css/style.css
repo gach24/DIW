@@ -1,0 +1,16 @@
+div {
+  width: 50%;
+  margin: 3em auto;
+  background-color: gray;
+  color: white;
+  padding: 2em;
+  font-size: 1.3em; }
+  div a {
+    background-color: salmon;
+    color: inherit;
+    width: 10em;
+    height: 10em;
+    padding: 3em;
+    /* El padding desplaza horizontalmente sin embargo parece que lo esta desplazando vertilmente, aunque realmente esta tapandolo para verlo podemos utilizar la propiedad
+        */
+    background-color: rgba(255, 255, 255, 0.2); }
