@@ -1,0 +1,25 @@
+@charset "UTF-8";
+div {
+  background-color: salmon;
+  color: white;
+  border: 1px solid;
+  width: 20rem;
+  height: 20rem;
+  padding: 2em;
+  display: inline-block;
+  /** 
+     * Versión 1.0
+     * Alineación por la línea base de texto de las cajas
+     */
+  vertical-align: baseline;
+  /* 
+     * Versión 2.0
+     * Aliación por la parte superior
+    vertical-align: top;
+     */
+  /* 
+     * Versión 3.0
+     * Alineación por la parte inferior
+    height: auto;
+    vertical-align: bottom;
+     */ }
