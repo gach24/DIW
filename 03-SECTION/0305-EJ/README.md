@@ -17,4 +17,21 @@ Posibles soluciones:
 ```
 
 - Estableciendo la propiedad **font-size del padre a 0**
+```
+    <div>
+        <img src="http://dummyimage.com/200x200" alt="Dummy image">
+    </div>
+    div {
+        font-size: 0;
+    }
+```
+- Estableciendo a la imagen la propiedad vertical-align a bottom
+```
+    <div>
+        <img src="http://dummyimage.com/200x200" alt="Dummy image">
+    </div>
 
+    img {
+        vertical-align: bottom;
+    }
+```

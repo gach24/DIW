@@ -9,6 +9,10 @@ div:nth-child(2) img {
     display: block;
 }
 
+div:nth-child(3)  img {
+    vertical-align: bottom;
+}
+
 div:last-of-type {
     font-size: 0;
 }
