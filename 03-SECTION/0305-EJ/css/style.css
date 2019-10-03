@@ -1,0 +1,11 @@
+div {
+  border: 1px solid;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  /* font-size: 0; */ }
+
+div:nth-child(2) img {
+  display: block; }
+
+div:last-of-type {
+  font-size: 0; }
