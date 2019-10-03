@@ -1,4 +1,13 @@
 @charset "UTF-8";
+#uno {
+  height: 10rem; }
+
+#dos {
+  height: 20rem; }
+
+#tres {
+  height: 40rem; }
+
 div {
   background-color: salmon;
   color: white;
@@ -10,8 +19,8 @@ div {
   /** 
      * Versión 1.0
      * Alineación por la línea base de texto de las cajas
+    vertical-align: baseline; // Valor por defecto
      */
-  vertical-align: baseline;
   /* 
      * Versión 2.0
      * Aliación por la parte superior
@@ -20,6 +29,10 @@ div {
   /* 
      * Versión 3.0
      * Alineación por la parte inferior
-    height: auto;
     vertical-align: bottom;
+     */
+  /* 
+     * Versión 3.0
+     * Alineación por la parte inferior
+    vertical-align: middle;
      */ }
