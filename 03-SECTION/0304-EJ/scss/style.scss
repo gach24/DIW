@@ -1,0 +1,21 @@
+div {
+    width: 25%;
+    height: 15rem;
+    background-color: deepskyblue;
+    padding: 1em;
+    color: white;
+    display: inline-block; // Dispongo los cuatro elementos en línea pero no caben por un espacio en blanco ¿?7
+}
+
+/**
+ Solución 01:
+margin-left: -4px; // Posible solución con márgenes
+*/
+
+/**
+ Solución 02:
+main { font-size: 0; } // Establezco el font-size del elemento padre a 0
+div { font-size: 1rem; } // Vuelvo a restablecerlo en el hijo
+*/
+
+
