@@ -1,0 +1,117 @@
+$title: #888;
+$title-font-family: 'Georgia', serif;
+$text: #444;
+$font-family: "Helvetica", sans-serif;
+
+/**
+ Ambito de las variables. Solo en el contexto en donde se definen
+*/
+p {
+    $fs: 14px;
+    font-size: $fs;
+}
+
+// p { font-size: $fs; } Error
+// p { $fs: 14px !globar; ... } // Definición global dentro de un contexto
+
+/** 
+ Los guiones medios y bajos son equivalentes
+ */
+p { font-family: $title_font_family; } // No recomendable 
+
+/*
+ Sass entiende todos los tipos de datos que podamos tener en css
+ darkgreen
+ #006400
+ hsl(120, 100%, 20%)
+ rgb(0, 100, 0)
+ Todos estos valores representan el mismo tono de verde y Sass los interpreta de la misma forma
+ */
+
+ /* 
+  Con Sass números simples y números con unidades son entendidos e interpretados por Sass, teniendo en cuenta que no se pueden mezclar diferentes unidades en una operación
+  10
+  14px
+  50%
+  8em
+  */
+
+  /*
+   Sass entiende 7 tipos de datos
+        - De CSS
+            - Cadenas
+            - Números 
+            - Colores
+        - Extendidos de Sass
+            - Boolean
+            - null
+            - listas
+            - maps
+*/
+
+/**
+ Ejemplos con cadenas
+ */
+/*
+$cadena: 'valor';
+@if ($cadena == 'valor') { } // True
+@if ($cadena) {} // True
+*/
+/*
+$cadena1: 'Hola';
+$cadena2: ' mundo!!!!!!!!';
+$cadena3: $cadena1 + $cadena2; // Hola mundo
+
+div::before { content: $cadena3; }
+*/
+/**
+ Ejemplos con números
+ */
+/*
+$numero1: 14%;
+$numero2: 2;
+$resultado: $numero1 + $numero2;
+div::before { content: $resultado; }
+ */
+// $resultado: 14% + 2em; Error tipos incompatibles
+/*
+$numero1: 6em;
+$numero2: 2;
+div {
+    margin-bottom: ($numero1 / $numero2)
+}
+*/
+
+/**
+ Ejemplos con el valor null
+$var: null;
+$var: 6;
+ */
+
+ /** 
+  Ejemplos con tipos booleanos
+  */
+$var: 1; // True
+$foo: 0; // True
+$boo: ''; // True
+$baz: 'cadena'; // True
+$joe: true; // True
+$var: null; // False
+$foo: false; // False 
+
+/**
+ Interpolaciones
+ Su sintasix es: #{$var}
+*/
+$image: 'icon-png';
+p { 
+    background-image: url('#{$image}');
+}
+
+$lista: facebook, twitter, linkedin;
+@each $i in $lista {
+    .icon-#{$i} {
+        background-image: url('#{$i}.icon');
+    }
+}
+
