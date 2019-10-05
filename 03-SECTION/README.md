@@ -19,8 +19,8 @@
 - Espacios no deseables entre elementos y en imagenes dentro de contenedores. [Ver enlace](https://davidwalsh.name/remove-whitespace-inline-block)
 
 Índice:
-1. [0301-EJ](./0301-EJ)
-2. [0302-EJ](./0302-EJ)
-3. [0303-EJ](./0303-EJ)
-4. [0304-EJ](./0304-EJ)
-5. [0305-EJ](./0305-EJ)
+1. [0301-EJ](./0301-EJ). Ejemplo sobre elementos inline
+2. [0302-EJ](./0302-EJ). Ejemplo de elementos en bloque
+3. [0303-EJ](./0303-EJ). Ejemplo de elementos inline-block
+4. [0304-EJ](./0304-EJ). Soluciones al espacio en blanco entre elementos inline-block
+5. [0305-EJ](./0305-EJ). Soluciones al espacio en blanco debajo de las imágenes
