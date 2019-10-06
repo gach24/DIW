@@ -1,0 +1,15 @@
+nav {
+  background-color: deepskyblue;
+  text-transform: uppercase;
+  color: white; }
+  nav ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    nav ul li {
+      display: table-cell;
+      text-align: center;
+      border: 1px solid; }
+      nav ul li a {
+        padding: 1em;
+        display: block; }

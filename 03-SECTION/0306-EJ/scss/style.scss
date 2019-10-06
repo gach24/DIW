@@ -1,0 +1,25 @@
+nav {
+    background-color: deepskyblue;
+    text-transform: uppercase;
+    color: white;
+    // padding: 2em 0; // Solo para ver el menu dentro de su contenedor
+    ul {
+        display: table; // paso 1
+        width: 100%; // paso 3
+        table-layout: fixed; // paso 5. Para evitar que el tamaño de la celda sea en función del contenido 
+        li {
+            display: table-cell; // paso 2
+            text-align: center; // paso 4
+            border: 1px solid;
+
+            // Resulta que los enlaces son muy poco accesibles
+            a {
+                padding: 1em;
+                display: block;
+            }            
+        }
+
+
+    }
+}
+
