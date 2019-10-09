@@ -1,7 +1,6 @@
 nav {
     background-color: deepskyblue;
     text-transform: uppercase;
-    margin-bottom: 3em;
     color: white;
     // padding: 2em 0; // Solo para ver el menu dentro de su contenedor
     ul {
@@ -11,38 +10,16 @@ nav {
         li {
             display: table-cell; // paso 2
             text-align: center; // paso 4
-            
+            border: 1px solid;
+
             // Resulta que los enlaces son muy poco accesibles
             a {
                 padding: 1em;
                 display: block;
             }            
         }
+
+
     }
 }
 
-.border {
-    ul {
-        // border-collapse: separate; // Por defecto, me pinta los bordes colindantes de ambas celdas // Paso 1
-        // border-collapse: collapse; // Con esta propiedad solo me pinta uno (los colapsa) 
-        border-spacing: .5em 1em; // Cuidado aquí la primera medida es izquierda y derecha y la última arriba y abajo
-     }
-    li {
-        border: 2px solid white;
-        border-radius: .5em; // Junto con border-spacing
-    }
-}
-
-.center {
-    background-color: transparent;
-    color: salmon;
-    li {
-        border: 1px solid deepskyblue;
-        width: 15rem;
-    }
-
-    ul {
-        width: auto;
-        margin: 0 auto;
-    }
-}

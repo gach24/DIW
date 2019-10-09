@@ -1,50 +1,34 @@
-section {
-    background-color: deepskyblue;
-    padding: 2rem;
-    margin: 2rem;
-    article {
-        background-color: #FFF;
-        color: deepskyblue;
-        padding: 1em;
+nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    border-top: 7px solid #FFCC00;
+    ul {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        /* border-spacing: 2rem 0; */
     }
-}
 
+    li {
+        display: table-cell;
+        text-align: center;
+        /*vertical-align: middle;  Comportamiento como se espera para table cell */
+    }
 
-#columns-inline-block {
-    font-size: 0; // font-size a 0 para que me quepan los 4 articles
-    article {
+    a { 
+        padding: 1em 1em;
         display: inline-block;
-        width: 22%; 
-        vertical-align: top; // Alineación entre elementos inline-block
-        height: 30rem; // Todos los articles con la misma altura
-        font-size: 1rem; // Restablezco el font-size para que se vean los articles
-        &:not(:last-child) {
-            margin-right: 4%; // Margin solo a los primeros tres articles
+        border-bottom: 4px solid transparent; // Para el desplazamiento de la caja inferior
+        // transition: border-bottom 1s linear;
+        &:hover {
+            border-bottom: 4px solid #FFCC00;  
         }
     }
 }
 
-#columns-float {
-    overflow: hidden; // Soluciona el problema cuando el padre pierde su altura cuando 
-    article {
-        float: left;
-        width: 22%;
-        height: 30rem;
-        &:not(:last-child) {
-            margin-right: 4%;
-        }       
-    } 
+
+main {
+    height: 10rem;
+    background-color: silver;
 }
-
-#columns-table {
-    display: table;
-    table-layout: fixed;
-    border-spacing: 2rem 0;
-    article {
-        display: table-cell;
-        width: 25%;
-    }      
-}
-
-
- 
