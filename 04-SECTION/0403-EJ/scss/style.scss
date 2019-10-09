@@ -20,7 +20,7 @@ nav {
         padding: 1em 1em;
         display: inline-block;
         border-bottom: 4px solid transparent; // Para el desplazamiento de la caja inferior
-        // transition: border-bottom 1s linear;
+        transition: border-bottom 1s linear;
         &:hover {
             border-bottom: 4px solid #FFCC00;  
         }
