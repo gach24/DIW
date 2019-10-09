@@ -1,0 +1,50 @@
+section {
+    background-color: deepskyblue;
+    padding: 2rem;
+    margin: 2rem;
+    article {
+        background-color: #FFF;
+        color: deepskyblue;
+        padding: 1em;
+    }
+}
+
+
+#columns-inline-block {
+    font-size: 0; // font-size a 0 para que me quepan los 4 articles
+    article {
+        display: inline-block;
+        width: 22%; 
+        vertical-align: top; // Alineación entre elementos inline-block
+        height: 30rem; // Todos los articles con la misma altura
+        font-size: 1rem; // Restablezco el font-size para que se vean los articles
+        &:not(:last-child) {
+            margin-right: 4%; // Margin solo a los primeros tres articles
+        }
+    }
+}
+
+#columns-float {
+    overflow: hidden; // Soluciona el problema cuando el padre pierde su altura cuando 
+    article {
+        float: left;
+        width: 22%;
+        height: 30rem;
+        &:not(:last-child) {
+            margin-right: 4%;
+        }       
+    } 
+}
+
+#columns-table {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 2rem 0;
+    article {
+        display: table-cell;
+        width: 25%;
+    }      
+}
+
+
+ 
