@@ -62,7 +62,7 @@ Por último, cuando pasamos el ratón sobre el enlace aparece el borde inferior,
         padding: 1em 1em;
         display: inline-block;
         border-bottom: 4px solid transparent; // Para el desplazamiento de la caja inferior
-        transition: border-bottom 1s linear;
+        transition: border-bottom 1s linear; // Efecto menos brusco
         &:hover {
             border-bottom: 4px solid #FFCC00;  
         }
