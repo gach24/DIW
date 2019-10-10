@@ -18,9 +18,9 @@ nav {
 
     a { 
         padding: 1em 1em;
-        display: inline-block;
+        display: inline-block; // Borde hasta el padding
         border-bottom: 4px solid transparent; // Para el desplazamiento de la caja inferior
-        transition: border-bottom 1s linear;
+        transition: border-bottom 1s linear; // Efecto menos brusco
         &:hover {
             border-bottom: 4px solid #FFCC00;  
         }
