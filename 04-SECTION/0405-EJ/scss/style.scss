@@ -1,0 +1,9 @@
+div {
+    background-color: lighten($color: gray, $amount: 10%);
+    color: white;
+    padding: 1em;
+    column-count: 3; // Tres columnas
+    column-gap: 3rem; // Separación entre columnas
+    column-rule: 1px solid white;  // Línea divisoria entre columnas
+    text-align: justify; // Texto justificado
+}
