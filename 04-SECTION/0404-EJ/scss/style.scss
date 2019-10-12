@@ -27,7 +27,7 @@ section {
 #columns-float {
     overflow: hidden; // Soluciona el problema cuando el padre pierde su altura cuando 
     article {
-        float: left;
+        float: left; // Flotamos los elementos a la izquierda
         width: 22%;
         height: 30rem;
         &:not(:last-child) {
