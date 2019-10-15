@@ -1,0 +1,27 @@
+.padre {
+    height: 30rem;
+    width: 70%;
+    margin: 3rem auto 0;
+    background-color: lighten(gray, 20%);
+}
+
+.hijo {
+    height: 10rem;
+    width: 20%;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    line-height: 10rem; 
+    font-size: 5rem; 
+    border: 5px solid darken(deepskyblue, 20%);
+}
+
+#hijo1 {
+    position: absolute; // El ancho cambia ya que es un 20% respecto del primer ancestro con position establecido
+    z-index: 1;
+}
+#hijo2 {
+    // Su ancho es respecto a su padre
+    position: relative;
+    top: 3rem;
+}
