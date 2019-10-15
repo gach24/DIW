@@ -1,0 +1,49 @@
+.padre {
+    height: 30rem;
+    width: 70%;
+    margin: 3rem auto 0;
+    background-color: lighten(gray, 20%);
+    position: relative; // Ancestro con position: establecido, que no se mueve
+}
+
+.hijo {
+    height: 10rem;
+    width: 10rem;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    line-height: 10rem; // Técnica de centrado vertical (solo una línea)
+    font-size: 5rem; 
+    border: 5px solid darken(deepskyblue, 20%);
+}
+
+/**
+ Paso 1 
+ Situarlo abajo a la derecha
+#hijo1 {
+    position: absolute; // Respecto del primer ancestro con position establecido
+    bottom: 0; // Abajo
+    right: 0; // A la derecha
+}
+*/
+
+/**
+ Situarlo en el centro
+#hijo1 {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin-right: -5rem;
+    margin-top: -5rem;
+}
+*/
+
+/**
+ Situarlo saliendo un poco
+
+#hijo1 {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+}
+ */
