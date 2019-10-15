@@ -1,0 +1,55 @@
+.padre {
+    height: 30rem;
+    width: 70%;
+    margin: 3rem auto 0;
+    background-color: lighten(gray, 20%);
+}
+
+.hijo {
+    height: 10rem;
+    width: 10rem;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    line-height: 10rem; // Técnica de centrado vertical (solo una línea)
+    font-size: 5rem; 
+    border: 5px solid darken(deepskyblue, 20%);
+}
+
+/*
+ Paso 1
+ */
+.hijo {
+    position: relative; // No sucede nada puesto que position: relative, deja a los 
+    // elementos en su posición original
+    // Más adelante nos aprovecharemos de esta circunstacia
+}
+
+/*
+ Paso 2
+ 
+#hijo1 {
+    top: 3rem; // Se desplaza desde donde estaba originalmente 3 rem hacia abajo
+    // Se produce un solapamiento ya que el hijo2 respeta la posición de hijo1 original
+    left: 5rem; // Se desplaza desde su posición original a la izquierda 5rem hacia la derecha
+}
+
+#hijo2 {
+    // top: 3rem; left: 5rem; // Se vuelven a alinear
+    right: 3rem; // Se desplaza desde su posición original a la derecha hacia la izquierda 
+    bottom: 5rem; // Se desplaza desde su posición original abajo hacia arriba
+}
+*/
+
+/*
+ Paso 3
+ */
+ #hijo1 {
+    top: -3rem; // Se desplaza desde donde estaba originalmente 3rem hacia arriba
+    left: -5rem; // Se desplaza desde su posición original a la izquierda 5rem hacia la izquierda
+}
+
+#hijo2 {
+    right: -3rem; // Se desplaza desde su posición original a la derecha hacia la derecha 
+    bottom: -5rem; // Se desplaza desde su posición original abajo hacia abajo 
+}
