@@ -1,0 +1,32 @@
+.padre {
+    height: 30rem;
+    width: 70%;
+    margin: 3rem auto 0;
+    background-color: lighten(gray, 20%);
+}
+
+.hijo {
+    height: 10rem;
+    width: 10rem;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    line-height: 10rem; // Técnica de centrado vertical (solo una línea)
+    font-size: 5rem; 
+    border: 5px solid darken(deepskyblue, 20%);
+}
+
+/** 
+ Paso 1
+*/
+#hijo1 {
+    position: absolute; // El elemento se sale del flujo y se situa en su posición natural si tuviera propiedad static a no ser que le establezca top, left, ...
+    top: 1rem; // Respecto de la coordenada (0, 0) del primer ancestro con position establecido
+    left: 4rem; // Respecto de la coordenada (0, 0) del primer ancestro con position establecido
+}
+
+#hijo2 {
+    position: absolute;
+    bottom: 5rem; // Respecto de la coordenada inferior del primer ancestro con position establecida
+    right: 10rem; // Respecto de la coordenada derecha del primer ancestor con position establecida
+}
