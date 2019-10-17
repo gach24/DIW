@@ -1,0 +1,80 @@
+body {
+    background-color: #F5F3F4;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 75rem; // 1200px
+    background-color: white;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+    position: relative;
+    .box {
+        width: 30%;
+        height: 12.5rem;
+        border: 3px solid white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 7px rgba(0, 0, 8, 0.6);
+        position: absolute;
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                background-image: url('../img/#{$i}.jpg');
+            }
+        }
+
+        .veil {
+            background-color: rgba(255, 255, 255, 0.7);
+            display: block;
+            height: 100%;
+            font-size: 2em;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 2s ease;
+        }
+
+        &:hover {
+            z-index: 3;
+            .veil {
+                opacity: 1;
+            }
+        }
+
+    }
+}
+
+.box:nth-child(1) {
+    left: -1%;
+    transform: rotate(-7deg);
+}
+
+.box:nth-child(2) {
+    left: 19%;
+    transform: rotate(-3deg);
+    z-index: 2;
+}
+
+.box:nth-child(3) {
+    left: 48%;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+
+.box:nth-child(4) {
+    right: -1%;
+    transform: rotate(3deg);
+}
+
+.fa-video-camera {
+    padding-top: 1em;
+}
+
+.text {
+    color: red;
+    text-transform: uppercase;
+    font-family: "Pathway Gothic One";
+    width: 70%;
+    margin: 0.5em auto 0;
+}
