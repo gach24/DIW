@@ -24,6 +24,7 @@ $ sass --sourcemap=auto scss/style.scss:css/style.css (opción por defecto)
 $ sass --sourcemap=inline scss/style.scss:css/style.css (en el propio css)
 $ sass --sourcemap=none scss/style.scss:css/style.css (no genera sourcemap)
 ```
+
 ## @import
 La directiva @import permite realizar una referencia a un archivo externo, es como añadir una nueva etiqueta <link> a un archivo html
 Admite diferentes formatos:
