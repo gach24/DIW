@@ -1,0 +1,61 @@
+/**
+ * Sintaxis
+@mixin nombre {
+    // contenido
+    propiedad: valor
+}
+*/
+/**
+ * Versión 1.0. Mixin simple
+@mixin box {
+    // Estas propiedades estan sustituidas por el mixin en el fichero _layout.scss
+    padding: 10px;
+    background-color: #E6EBE0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+ */
+
+/**
+ * Versión 2.0. Mixin con parámetros
+@mixin box($radius, $bg, $space) {
+    padding: ($space / 2);
+    background-color: $bg;
+    border-radius: $radius;
+    margin-bottom: $space;
+}
+ */
+/**
+ * Versión: 3.0. Mixin con parámetros con valores por defecto
+@mixin box($radius: null, $bg: #f2f2f2, $space: 20px) {
+    padding: ($space / 2);
+    background-color: $bg;
+    border-radius: $radius;
+    margin-bottom: $space;
+}
+*/
+
+/** 
+ * Versión 4.0. Mixin con estructura condicional en su interior
+
+ @mixin box($radius: null, $bg: #f2f2f2, $space: 20px) {
+    padding: ($space / 2);
+    background-color: $bg;
+    border-radius: $radius;
+    margin-bottom: $space;
+    @if lightness($bg) < 50% {
+        color: #FFF;
+    } else {
+        color: $text;
+    }
+} 
+ */
+
+/** 
+ * Versión 5
+@mixin mq-tablet {
+    @media (min-width: 680px) and (max-width: 1024px) {
+        @content;
+    }
+}
+ */
