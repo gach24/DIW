@@ -1,0 +1,18 @@
+html {
+    height: 100%; // El body desborda, porque el html tiene el 100% de su padre -> la ventana
+}
+
+.padre {
+    height: 130vh; // 100vh sería el alto de la ventana
+    width: 70%;
+    margin: 0 auto;
+    background-color: lighten(gray, 20%);
+    border-bottom: 10px solid black;
+}
+
+.hijo {
+    height: 5rem;
+    background-color: deepskyblue;
+    position: fixed; // Sin ancho ocupa lo que ocupa su contenido
+    width: 70%; // Le pongo ancho del 70, con position fixed desaparece porque no tiene ancho y además el ancho es respecto de la ventana. 
+}

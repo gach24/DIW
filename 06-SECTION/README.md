@@ -27,3 +27,11 @@ Posicionamiento de la caja respecto de la coordenada (0, 0) de la ventana
 Además:
 1. Fuera del flujo normal, es decir, el resto de elementos no respetan la posición original del elemento. Posibles solapamientos
 2. Ni el body ni el html son la ventana, por eso el elemento posicionado con fixed no se menea aunque haga scroll
+
+Ejemplos:
+1. [0601-EJ](./0601-EJ). Ejemplos con **position: relative**
+2. [0602-EJ](./0602-EJ). Ejemplos con **position: absolute**
+3. [0603-EJ](./0603-EJ). Ejemplo de **position: absolute** con centrado vertical
+4. [0604-EJ](./0604-EJ). Ejemplo de anchos con diferentes en el mismo elemento con **position: relative** y **position: absolute**
+5. [0605-EJ](./0605-EJ). Ejemplo con **position: fixed**
+6. [0606-EJ](./0606-EJ). Ejemplo con la propiedad **z-index**
