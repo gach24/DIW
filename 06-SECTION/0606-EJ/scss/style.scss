@@ -1,0 +1,23 @@
+.card {
+    height: 20rem;
+    width: 15rem;
+    background-color: deepskyblue;
+    border: 10px solid #DDD;
+    color: white;
+    font-size: 3em;
+    padding: 1em;
+}
+
+$zi: 3;
+
+@for $i from 2 through 5 {
+    .card:nth-child(#{$i}) {
+        position: absolute;
+        left: 8rem * ($i - 1);
+        top: 5rem * ($i - 1);
+        @if ($i == $zi) {
+            z-index: 1;
+        }
+    }
+}
+
