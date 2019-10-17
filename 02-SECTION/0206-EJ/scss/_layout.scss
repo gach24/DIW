@@ -1,0 +1,72 @@
+.container {
+    margin: 0 auto;
+    max-width: 680px;
+    padding: 0 20px;
+    color: $title;
+}
+
+// PASO 1: Anidando     
+/**
+    Esto sería sin la utilización de Sass, es decir con sintaxis css normal
+.box {
+    padding: 10px;
+    background-color: #E6EBE0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}    
+
+.box .head {
+    border-bottom: 1px solid #9BC1BC;
+    padding-bottom: 10px;
+}
+
+.box .head h3 {
+    margin: 0;
+    color: #5CA4A9;
+}
+
+.box .cont {
+    padding-top: 10px;    
+}
+*/
+
+/*
+    Con Sass
+*/
+.box {
+    padding: 10px;
+    background-color: #E6EBE0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    @include box($box-radius, $box-bg, 20px);
+    .head {
+        border-bottom: 1px solid #9BC1BC;
+        padding-bottom: 10px;
+        h3 {
+            margin: 0;
+            color: #5CA4A9;
+        }
+    }
+    .cont {
+        padding-top: 10px;
+    }
+}
+
+
+.box-grey {
+    // Versión 2.0 @include box(8px, #f2f2f2, 30px);
+    // Versión 3.0 @include box;
+    @include box(8px, #000, 30px);
+}
+
+/* 
+ * Version 5.0
+ */
+@include mq-tablet {
+    .selector {
+        padding: 20px;
+    }
+    .otro {
+        padding: 20px;
+    }
+}

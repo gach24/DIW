@@ -1,0 +1,93 @@
+/**
+ * Estructura IF
+ */
+$if1: 20;
+/*
+ * Versión 1.0
+@if $if1 == 20 {
+    .if {
+        width: 20px;
+    }
+} 
+ */
+
+/**
+ * Versión 2.0
+@if $if1 == 2 {
+    .if {
+        width: 20px;
+    }
+} @else {
+    .if {
+        width: 10px;
+    }
+}
+ */
+
+/**
+ * Versión 3.0
+@if $if1 == 10 {
+    .if {
+        width: 20px;
+    }
+} @else if $if1 == 30 {
+    .if {
+        width: 10px;
+    }
+} @else {
+    .if {
+        width: 5px;
+    }
+}
+ */
+
+$redes: (facebook, #3b5998), (twitter, #00aced), (gplus, #dd4b39);
+
+
+@mixin btn {
+    display: inline-block;
+    padding: 10px 20px 10px 36px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/** 
+ * Version 1.0
+ */
+@each $red, $color in $redes {
+    .btn-#{$red} {
+        @include btn;
+        background: {
+            color: $color;
+            image: url('../img/icon-#{$red}.png');
+            position: 8px 50%;
+            repeat: no-repeat;
+            size: 20px 20px; 
+        };
+    }
+}
+
+@for $i from 1 through 12 {
+    .col#{$i} {
+        margin: 0 10px;
+        width: (60px * $i);
+
+    }
+}
+
+@for $i from 1 to 12 {
+    .col#{$i} {
+        margin: 0 10px;
+        width: (60px * $i);
+        
+    }
+}
+
+$e: 1;
+@while $e < 12 {
+    .pre#{$e} {
+        margin-left: (60px * $e) + (20px * $e);
+    }
+    $e: $e + 1;
+}
