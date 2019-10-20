@@ -35,3 +35,4 @@ Ejemplos:
 4. [0604-EJ](./0604-EJ). Ejemplo de anchos con diferentes en el mismo elemento con **position: relative** y **position: absolute**
 5. [0605-EJ](./0605-EJ). Ejemplo con **position: fixed**
 6. [0606-EJ](./0606-EJ). Ejemplo con la propiedad **z-index**
+7. [0607-EJ](./0607-EJ). Ejemplo completo con todas las propiedades.
