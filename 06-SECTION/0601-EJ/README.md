@@ -1,5 +1,11 @@
 # Ejemplo de la propiedad **position: relative**
 En el ejemplo se pueden ver una caja principal/padre (.padre) con dos cajas hijas en su interior (.hijo), como se observa en la imagen ![01-state](./doc/img/01-state.png)
+```html
+<div class="padre">
+    <div id="hijo1" class="hijo">1</div>
+    <div id="hijo2" class="hijo">2</div>
+</div>
+```
 ```css
 .padre {
     height: 30rem;
