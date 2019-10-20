@@ -17,41 +17,48 @@
 }
 
 /*
- Paso 1
-
+ * STEP 01
 .hijo {
-    position: relative; // No sucede nada puesto que position: relative, deja a los 
-    // elementos en su posición original
+    // No sucede nada puesto que position: relative, deja a los elementos en su posición original
     // Más adelante nos aprovecharemos de esta circunstacia
+    position: relative;
+}
+ */
+
+
+/*
+ * STEP 02
+#hijo1 {
+    // Se desplaza desde donde estaba originalmente 3 rem hacia abajo
+    // Se produce un solapamiento ya que el hijo2 respeta la posición de hijo1 original
+    top: 3rem; 
+    // Se desplaza desde su posición original a la izquierda 5rem hacia la derecha
+    left: 5rem; 
+}
+
+#hijo2 {
+    // Se vuelven a alinear
+    top: 3rem; left: 5rem;
+    // Se desplaza desde su posición original a la derecha hacia la izquierda
+    right: 3rem;  
+    // Se desplaza desde su posición original abajo hacia arriba
+    bottom: 5rem; 
 }
  */
 
 /*
- Paso 2
- 
+ * STEP 03
 #hijo1 {
-    top: 3rem; // Se desplaza desde donde estaba originalmente 3 rem hacia abajo
-    // Se produce un solapamiento ya que el hijo2 respeta la posición de hijo1 original
-    left: 5rem; // Se desplaza desde su posición original a la izquierda 5rem hacia la derecha
+    // Se desplaza desde donde estaba originalmente 3rem hacia arriba
+    top: -3rem; 
+    // Se desplaza desde su posición original a la izquierda 5rem hacia la izquierda
+    left: -5rem; 
 }
 
 #hijo2 {
-    // top: 3rem; left: 5rem; // Se vuelven a alinear
-    right: 3rem; // Se desplaza desde su posición original a la derecha hacia la izquierda 
-    bottom: 5rem; // Se desplaza desde su posición original abajo hacia arriba
-}
-*/
-
-/*
- Paso 3
-
- #hijo1 {
-    top: -3rem; // Se desplaza desde donde estaba originalmente 3rem hacia arriba
-    left: -5rem; // Se desplaza desde su posición original a la izquierda 5rem hacia la izquierda
-}
-
-#hijo2 {
-    right: -3rem; // Se desplaza desde su posición original a la derecha hacia la derecha 
-    bottom: -5rem; // Se desplaza desde su posición original abajo hacia abajo 
+    // Se desplaza desde su posición original a la derecha hacia la derecha 
+    right: -3rem; 
+    // Se desplaza desde su posición original abajo hacia abajo 
+    bottom: -5rem; 
 }
  */
