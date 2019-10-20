@@ -3,6 +3,3 @@
 
 2. [Para generar .gitignore automáticamente](http://gitignore.io/). Página donde nos genera .gitignore automáticamente, solamente seleccionando la tecnología en la que trabajas
 
-
-## Herramientas
-1. ScreenToGif. 
