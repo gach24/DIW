@@ -15,20 +15,22 @@
     line-height: 10rem; // Técnica de centrado vertical (solo una línea)
     font-size: 5rem; 
     border: 5px solid darken(deepskyblue, 20%);
+    position: absolute; 
 }
 
 /**
- Paso 1 
- Situarlo abajo a la derecha
+ * STEP 01. Situarlo abajo a la derecha
+
 #hijo1 {
     position: absolute; // Respecto del primer ancestro con position establecido
     bottom: 0; // Abajo
     right: 0; // A la derecha
 }
-*/
+ */
 
 /**
- Situarlo en el centro
+ * STEP 02. Situarlo en el centro
+
 #hijo1 {
     position: absolute;
     right: 50%;
@@ -36,14 +38,14 @@
     margin-right: -5rem;
     margin-top: -5rem;
 }
-*/
+ */
+
 
 /**
- Situarlo saliendo un poco
-
-#hijo1 {
-    position: absolute;
+ * STEP 03. Situarlo saliendo un poco del padre
+ */
+#hijo2 {
+    // position: absolute;
     top: -1rem;
     right: -1rem;
 }
- */
