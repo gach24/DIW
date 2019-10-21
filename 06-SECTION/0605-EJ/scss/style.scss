@@ -10,9 +10,29 @@ html {
     border-bottom: 10px solid black;
 }
 
+/**
+ * STEP 01. Elemento fixed 
+ * El elemento no se visualiza ya que el ancho ocupa su contenido o es necesario establecerselo
+ */
 .hijo {
     height: 5rem;
     background-color: deepskyblue;
     position: fixed; // Sin ancho ocupa lo que ocupa su contenido
-    width: 70%; // Le pongo ancho del 70, con position fixed desaparece porque no tiene ancho y además el ancho es respecto de la ventana. 
 }
+
+/**
+ * STEP 02. Establecemos ancho
+ * Le pongo ancho del 100%, pero el ancho es respecto de la ventana. 
+ */
+.hijo {
+    width: 100%; // ERROR
+}
+
+/**
+ * STEP 03. Establecemos ancho correctamente
+ * Le pongo ancho del 100%, pero el ancho es respecto de la ventana. 
+ */
+.hijo {
+    width: 70%;
+} 
+
