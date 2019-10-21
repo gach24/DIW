@@ -17,11 +17,12 @@
 }
 
 #hijo1 {
-    position: absolute; // El ancho cambia ya que es un 20% respecto del primer ancestro con position establecido
+    // El ancho cambia ya que es un 20% respecto del primer ancestro con position establecido en este caso el html
+    position: absolute; 
     z-index: 1;
 }
 #hijo2 {
-    // Su ancho es respecto a su padre
+    // El ancho cambia ya que es un 20% respecto a su padre en este caso ".padre"
     position: relative;
     top: 3rem;
 }
