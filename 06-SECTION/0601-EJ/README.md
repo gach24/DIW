@@ -6,7 +6,7 @@ En el ejemplo se pueden ver una caja principal/padre (.padre) con dos cajas hija
     <div id="hijo2" class="hijo">2</div>
 </div>
 ```
-```css
+```scss
 .padre {
     height: 30rem;
     width: 70%;
@@ -26,7 +26,7 @@ En el ejemplo se pueden ver una caja principal/padre (.padre) con dos cajas hija
 }
 ```
 - En el paso 01 al establecer la propiedad **position** de las cajas "hijas" a **relative** su posición no se modifica, esto es así porque la propiedad positión si no se establecen las "coordenadas" (top, left, ...), el elemento se sitúa en la posición que normalmente tendría con el flujo normal del html
-```css
+```scss
 .hijo {
     /* 
      * No sucede nada puesto que position: relative, deja a los elementos en su posición original
@@ -37,7 +37,7 @@ En el ejemplo se pueden ver una caja principal/padre (.padre) con dos cajas hija
 
 - En el paso 02 al establecer las propiedades top, left, right, bottom, a ambas cajas hijas, los elementos se mueven desde su posición original en los valores establecidos
 ![02-state](./doc/img/02-state.png)
-```css
+```scss
 #hijo1 {
     // Se desplaza desde donde estaba originalmente 3 rem hacia abajo
     // Se produce un solapamiento ya que el hijo2 respeta la posición de hijo1 original
@@ -58,7 +58,7 @@ En el ejemplo se pueden ver una caja principal/padre (.padre) con dos cajas hija
 
 - Finalmente en el paso 03, se vuelven a establcer valores diferentes para las propiedades top, left, right, bottom, pero con margenes negativos, se puede observar, que la propiedad **right: -3rem** es equivalente a **left: 3rem**
 ![02-state](./doc/img/03-state.png)
-```css
+```scss
 #hijo1 {
     // Se desplaza desde donde estaba originalmente 3rem hacia arriba
     top: -3rem; 
