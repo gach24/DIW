@@ -1,0 +1,30 @@
+.wrapper {
+    width: 80%; 
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, .2);
+    margin-top: 2em;
+    margin-left: auto; 
+    margin-right: auto;
+}
+ 
+/**
+ * Estado inicial
+ */
+.box {
+    background-color: white;
+    padding: 2em;
+    width: 30%;
+}
+
+/**
+ * STEP 01. Segunda técnica de centrado, se establecen en los elementos display:inline-block
+ * y al padre text-align: center
+ */
+.wrapper {
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    text-align: justify;
+}

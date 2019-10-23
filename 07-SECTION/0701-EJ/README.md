@@ -2,6 +2,12 @@
 
 En el ejemplo tenemos dos cajas padre (.wrapper) e hijo (.box) y se centra el elemento mediante la primera de las técnicas de centrado, que se aplica cuando el elemento a centrar tiene naturaleza de bloque y además su ancho es conocido, en este caso el 80% de su elemento padre
 
+```html
+<div class="wrapper">
+    <div class="box">...</div>
+</div>
+```
+
 ```scss
 .wrapper {
     // Wrapper es un div que tiene por su naturaliza display: block
