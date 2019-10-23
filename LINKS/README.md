@@ -15,7 +15,7 @@
 
 1. [ScreenToGif](https://www.screentogif.com/). Herramienta para documentar mediante capturas de pantalla
 
-## WEBS
+## JUEGOS
 
 1. [Flexbox Froggy](https://flexboxfroggy.com/#es) Juego para practicar CSS Flexblox.
 2. [Grid Garden](https://cssgridgarden.com/#es) Juego para practicar CSS Grid.
