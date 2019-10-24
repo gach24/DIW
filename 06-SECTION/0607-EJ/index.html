@@ -40,5 +40,51 @@
             </div>
         </section>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+
+        /*
+         * Hover con jquery
+         *
+        $(function() {
+            var boxes = $('.box');
+            boxes.on('mouseenter', function() {
+                boxes.css('z-index', 0);
+                $(this).css('z-index', 3);
+
+                // $('.veil').css('opacity', 0);
+                boxes.find('.veil').css('opacity', 0);
+                $(this).find('.veil').css('opacity', 1);
+            }); 
+        });
+         */
+        /*
+         * Hover con javascript
+         *
+        document.addEventListener('DOMContentLoaded', function() {
+            var boxes = document.querySelectorAll('.box');
+            var veils = document.querySelectorAll('.veil');
+
+
+            boxes.forEach( box => {
+                box.addEventListener('mouseenter', function(e) {
+                    // console.log(e.target);
+                    
+                    boxes.forEach( box => {
+                        box.style.zIndex = 0;
+                    });
+                    veils.forEach( veil => {
+                        veil.style.opacity = 0;
+                    })
+                    
+                    e.target.children[0].style.opacity = 1;
+                    e.target.style.zIndex = 3;
+                });
+            });
+        });
+        */
+
+    </script>
 </body>
 </html>

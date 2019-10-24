@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #F5F3F4;
 }
@@ -10,7 +12,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 5rem;
-    position: relative;
+   //  position: relative;
     .box {
         width: 30%;
         height: 12.5rem;
@@ -19,11 +21,7 @@ body {
         background-repeat: no-repeat;
         box-shadow: 0 0 7px rgba(0, 0, 8, 0.6);
         position: absolute;
-        @for $i from 1 through 4 {
-            &:nth-child(#{$i}) {
-                background-image: url('../img/#{$i}.jpg');
-            }
-        }
+
 
         .veil {
             background-color: rgba(255, 255, 255, 0.7);
@@ -34,37 +32,40 @@ body {
             opacity: 0;
             transition: opacity 2s ease;
         }
-
+        
         &:hover {
             z-index: 3;
             .veil {
                 opacity: 1;
             }
         }
-
     }
 }
 
 .box:nth-child(1) {
     left: -1%;
     transform: rotate(-7deg);
+    background-image: url('../img/1.jpg');
 }
 
 .box:nth-child(2) {
     left: 19%;
     transform: rotate(-3deg);
     z-index: 2;
+    background-image: url('../img/2.jpg');
 }
 
 .box:nth-child(3) {
     left: 48%;
     transform: rotate(-5deg);
     z-index: 1;
+    background-image: url('../img/3.jpg');
 }
 
 .box:nth-child(4) {
     right: -1%;
     transform: rotate(3deg);
+    background-image: url('../img/4.jpg');
 }
 
 .fa-video-camera {
