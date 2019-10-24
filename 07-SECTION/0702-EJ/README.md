@@ -41,9 +41,9 @@ Esta técnica es similar a la anterior (mediante **margin: auto**), sin embargo,
 
 ```html
 <div class="wrapper">
-    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet ratione nemo modi! Fugit esse natus quos itaque magnam rem expedita illo, totam iusto dolorem, tempore veritatis aut laboriosam eaque.</div>
-    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet ratione nemo modi! Fugit esse natus quos itaque magnam rem expedita illo, totam iusto dolorem, tempore veritatis aut laboriosam eaque.</div>
-    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet ratione nemo modi! Fugit esse natus quos itaque magnam rem expedita illo, totam iusto dolorem, tempore veritatis aut laboriosam eaque.</div>
+    <div class="box">...</div>
+    <div class="box">...</div>
+    <div class="box">...</div>
 </div>
 ```
 
