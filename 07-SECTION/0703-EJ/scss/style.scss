@@ -1,0 +1,21 @@
+nav {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: salmon;
+    ul {
+        display: table; 
+        margin: auto;
+        // table-layout: fixed;
+        li {
+            display: table-cell; 
+            text-align: center; 
+            border: 1px solid deepskyblue;
+            // width: 15rem;
+            a {
+                padding: 1em;
+                display: block;
+            }            
+        }
+    }
+}
+
