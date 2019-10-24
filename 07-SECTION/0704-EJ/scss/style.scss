@@ -1,0 +1,29 @@
+body {
+    font-size: 2em;
+}
+
+/**
+ * STEP 01
+ */
+.square-button {
+    height: 3em;
+    width: 3em;
+    border: 1px solid;
+    color: deepskyblue;
+    display: inline-block;
+    text-align: center;
+    line-height: 3em;
+}
+
+
+/**
+ * STEP 02: Ojo con padding tendría que hacerlo a ojo
+
+.square-button {
+    border: 1px solid;
+    color: deepskyblue;
+    display: inline-block;
+    text-align: center;
+    padding: 1em 1.3em;
+}
+ */

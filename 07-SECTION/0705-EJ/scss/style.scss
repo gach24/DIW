@@ -1,0 +1,30 @@
+/**
+ * STEP 01
+
+.button {
+    border: 1px solid;
+    display: table;
+    height: 3rem;
+    padding: 0 2em;
+    span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+*/
+
+/**
+ * STEP 02
+
+.button {
+    border: 1px solid;
+    display: table;
+    height: 3rem;
+    width: 10rem;
+    span {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+*/

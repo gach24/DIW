@@ -1,0 +1,17 @@
+.wrapper {
+    width: 80%;
+    background-color: rgba(0,0,0,.2);
+    height: 30rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box {
+    background-color: salmon;
+    position: absolute;
+    width: 50%;
+    padding: 2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
