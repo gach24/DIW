@@ -1,21 +1,21 @@
 nav {
+    margin-top: 3rem;
     text-transform: uppercase;
     background-color: transparent;
     color: salmon;
     ul {
-        display: table; 
+        display: table;
         margin: auto;
-        // table-layout: fixed;
+        // table-layout: fixed; width: 100%;
         li {
-            display: table-cell; 
-            text-align: center; 
+            display: table-cell;
+            text-align: center;
             border: 1px solid deepskyblue;
-            // width: 15rem;
+            width: 10rem;
             a {
                 padding: 1em;
                 display: block;
-            }            
+            }
         }
     }
 }
-
