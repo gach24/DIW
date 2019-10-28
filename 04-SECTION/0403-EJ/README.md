@@ -42,7 +42,7 @@ nav {
         ...
     }
 
-    a { 
+    a {
         ...
     }
 }
@@ -66,7 +66,7 @@ Se utiliza **inline-block** y no **block** porque pretendemos que el borde infer
 Por último, cuando pasamos el ratón sobre el enlace aparece el borde inferior, pero esto hace la caja inferior se despace hacia abajo, para evitar este efecto establecemos el borde previamente con un color transparente y añadimos una transición para que el cambio sea menos brusco
 
 ```scss
-    a { 
+    a {
         padding: 1em 1em;
         display: inline-block;
         border-bottom: 4px solid transparent; // Para el desplazamiento de la caja inferior
