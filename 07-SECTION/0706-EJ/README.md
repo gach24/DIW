@@ -2,6 +2,13 @@
 
 En el ejemplo se muestra una caja principal ".wrapper" centrada horizontalmente, esta caja contiene a su vez otra **caja ".box" de altura y anchura 10rem**, el objetivo del ejemplo es centrarla horizontal y verticalmente.
 
+```html
+<div class="wrapper">
+    <div class="box">
+    </div>
+</div>
+```
+
 ![01-state](./doc/img/01-state.png)
 
 ```scss
