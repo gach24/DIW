@@ -1,4 +1,5 @@
 # Centrado vertical mediante display: table y vertical-align: middle
+
 Aunque hemos visto que la propiedad **vertical-align** solo nos sirve para la alineación entre elementos **inline-block**, en combinación con **display: table** tiene un comportamiento diferente, permitiendo el centrado vertical
 
 En el ejemplo vemos una etiqueta div simulando un botón, notar que el texto del botón tiene varias líneas por lo que no podemos utilizar la técnica de centrado anterior mediante line-height).
@@ -32,7 +33,6 @@ En esta situación, para el centrado horizontal podermos realizarlo mediante **t
     height: 3rem;
     width: 15rem;
     padding: 0 2em;
-
     span {
         text-align: center;
         display: table-cell;
