@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Ejemplo 08 de la sección 07: Ejemplo completo de repaso de centrado</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <div class="lightbox">
+        <div class="box-content">
+            <span class="icon">
+                <img src="./img/avion_ico.png" alt="">
+            </span>
+            <div class="title">Abierto 24 horas</div>
+            <p>Tu gestión depende solo de ti. No importa el momento en el que desees empezar o el tiempo que quieras emplear. ¡Siempre estaremos disponibles!</p>
+        </div>
+        <div class="close">X</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+        $(function() {
+            $(".close").click(function() {
+                $(".lightbox").hide();
+            });
+        });
+            
+    </script>
 </body>
 </html>

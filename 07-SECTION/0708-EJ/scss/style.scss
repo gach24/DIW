@@ -1,0 +1,65 @@
+
+body {
+    height: 130vh;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .lightbox {
+        font-family: Lato;
+        font-size: 1.6em;
+        background-color: rgba(0, 0, 0, .8);
+        // position: absolute; // No correcto deja al descubierto el 30% inferior del scroll
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%; // Necesario por el position: fixed;
+        height: 100%;
+
+        .box-content {
+            width: 70%;
+            color: #828282;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // background-color:rgba(255, 255, 255, .3); // Solo para ver la caja
+            padding-left: 2rem;
+
+        }
+        .title, .close {
+            color: white;
+        }
+
+        .title {
+            margin-bottom: .5em;
+            font-size: 1.1em;
+        }
+
+        .close {
+            background-color: rgba(255, 255, 255, .2);
+            position: absolute;
+            height: 3em;
+            width: 3em;
+            line-height: 3em;
+            text-align: center;
+            border-radius: 50%;
+            top: 10rem;
+            right: 10rem;
+        }
+
+        .icon {
+            display: block;
+            height: 1.5rem;
+            width: 1.5rem;
+            position: absolute;
+            left: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
