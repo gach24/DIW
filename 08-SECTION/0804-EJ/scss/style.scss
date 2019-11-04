@@ -1,0 +1,22 @@
+.container {
+    width: 26rem;
+    margin: 3rem auto 0;
+    padding: 1em;
+}
+
+.item {
+    background-color: #eee;
+    margin-bottom: .5em;
+    padding: 1em;
+    /**
+     * STEP 01
+     */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.next {
+    font-size: 2em;
+
+}
