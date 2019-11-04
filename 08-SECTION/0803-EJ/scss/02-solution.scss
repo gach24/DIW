@@ -1,0 +1,26 @@
+.total {
+    background-color: #ddd;
+    text-transform: uppercase;
+    width: 26rem;
+    margin: 3em auto 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.literal {
+    font-weight: 300;
+}
+
+/**
+ * STEP 01
+ * Flotamos la cantidad a la izquierda
+ */
+.amount {
+    color: #ABC111;
+    font-size: 1.5em;
+    span {
+        font-size: 0.8em;
+    }
+}

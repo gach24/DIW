@@ -10,8 +10,16 @@
 - Cambiar el orden en el que se muestran los elementos sin que cambie el HTML
 - ...
 
-# Introducción 
+# Introducción
 
 ![ejes-flexbox](./doc/img/ejes-flexbox.jpg)
 
 Más información pincha [aqui](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+Ejemplos:
+
+1. [Ejemplo con propiedades **display: flex** y **display: inline-flex**](./0801-EJ)
+
+2. [Ejemplos con propiedades **flex-direction**, **flex-wrap**, **justify-content**, **align-items**, **align-content**](./0802-EJ)
+
+3. 

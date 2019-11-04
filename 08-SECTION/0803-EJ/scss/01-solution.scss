@@ -1,0 +1,34 @@
+.total {
+    background-color: #ddd;
+    text-transform: uppercase;
+    width: 26rem;
+    margin: 3em auto 0;
+    padding: 1em;
+    /**
+     * STEP 02
+     * Para que contemple la existencia del hijo que hemos flotado
+     */
+    overflow: hidden;
+}
+
+.literal {
+    font-weight: 300;
+    /**
+     * STEP 03
+     * Para que literal y amount tengan la misma altura y conseguir un centrado horizontal
+     */
+    line-height: 1.5em;
+}
+
+/**
+ * STEP 01
+ * Flotamos la cantidad a la izquierda
+ */
+.amount {
+    float: right;
+    color: #ABC111;
+    font-size: 1.5em;
+    span {
+        font-size: 0.8em;
+    }
+}
