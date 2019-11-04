@@ -1,0 +1,26 @@
+.flex-container {
+    background-color: salmon;
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-wrap: nowrap; // Por defecto
+    /**
+     * STEP 01
+     * Permite varias líneas sin que los items desborden
+     
+    flex-wrap: wrap;
+     */
+
+    /**
+     * STEP 02
+     * Permite varias líneas sin que los items desborden pero crea líneas hacia arriba
+     
+     flex-wrap: wrap-reverse;
+     */
+}
+
+.flex-item {
+    font-size: 5em;
+    background-color: deepskyblue;
+    border: 3px solid;
+}

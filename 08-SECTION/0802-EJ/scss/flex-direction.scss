@@ -1,0 +1,33 @@
+.flex-container {
+    background-color: salmon;
+    color: white;
+    padding: 1em;
+    display: flex;
+    // flex-direction: row; // Por defecto
+    /**
+     * STEP 01
+    flex-direction: row-reverse; 
+    */
+
+    /**
+     * STEP 02    
+     * Por defecto stretch ocupa todo el ancho disponible, aunque podemos establecer ancho específico
+    flex-direction: column;
+     */
+
+    /**
+     * STEP 02    
+     * Por defecto stretch ocupa todo el ancho disponible, aunque podemos establecer ancho específico     
+    flex-direction: column-reverse;
+     */
+
+    /** 
+     * Podemos combinarlo con inline-flex
+     */
+}
+
+.flex-item {
+    font-size: 5em;
+    background-color: deepskyblue;
+    border: 3px solid;
+}

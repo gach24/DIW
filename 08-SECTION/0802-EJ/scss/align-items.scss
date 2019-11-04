@@ -1,0 +1,50 @@
+.flex-container {
+    background-color: salmon;
+    color: white;
+    padding: 1em;
+    display: flex;
+    height: 30rem; // Solo para ver mejor la propiedad align-itemsç
+    align-items: stretch; // Por defecto
+
+    /** 
+     * STEP 01
+     * Los items se alinean en la parte superior del contenedor y su altura/anchura será la de su contenido dependiendo del
+     * flex-direction
+     */
+    align-items: flex-start;
+
+    /** 
+     * STEP 02
+     * Los items se alinean en la parte inferior del contenedor y su altura/anchura será la de su contenido dependiendo del
+     * flex-direction
+     */
+     align-items: flex-end;    
+
+    /** 
+     * STEP 03
+     * Los items se alinean en la parte central verticalmente y su altura/anchura será la de su contenido dependiendo del
+     * flex-direction
+     */
+     align-items: center;    
+
+    /** 
+     * STEP 04
+     * Los items se alinean según la línea base de su contenido en común
+     */
+     align-items: baseline;        
+    
+}
+
+.flex-item {
+    font-size: 5em;
+    background-color: deepskyblue;
+    border: 3px solid;
+
+    /** 
+     * STEP 04
+     * Los items se alinean según la línea base de su contenido en común
+     */
+    &:nth-child(3) {
+        font-size: 7em;
+    }
+}

@@ -1,0 +1,41 @@
+.flex-container {
+    background-color: salmon;
+    color: white;
+    padding: 1em;
+    height: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    // align-content: stretch;
+
+    /**
+     * STEP 01
+     */
+    align-content: flex-start;
+     
+     /**
+      * STEP 02
+      */
+    align-content: flex-end;
+
+    /**
+     * STEP 03
+     */ 
+    align-content: center;
+
+    /**
+     * STEP 04
+     */
+    align-content: space-between;
+
+    /**
+     * STEP 05
+     */
+    align-content: space-around;
+    // align-items: center;
+}
+
+.flex-item {
+    font-size: 5em;
+    background-color: deepskyblue;
+    border: 3px solid;
+}

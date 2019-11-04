@@ -1,0 +1,41 @@
+.flex-container {
+    background-color: salmon;
+    color: white;
+    padding: 1em;
+    display: flex;
+    // justify-content:  flex-start; // Por defecto
+
+    /** 
+     * STEP 01
+     * Se disponen los elementos al final del contenedor
+
+     justify-content: flex-end;
+     */
+     
+    /** 
+     * STEP 02
+     * Se disponen los elementos en el centro del contenedor
+
+     justify-content: center;    
+     */
+     
+    /** 
+     * STEP 03
+     * Reparte el espacio entre los diferentes elementos del contenedor hasta los límites
+
+     justify-content: space-between;       
+     */
+
+     /** 
+     * STEP 04
+     * Reparte el espacio entre los diferentes elementos del contenedor
+
+     justify-content: space-around; 
+     */     
+}
+
+.flex-item {
+    font-size: 5em;
+    background-color: deepskyblue;
+    border: 3px solid;
+}
