@@ -1,0 +1,21 @@
+.flex-container {
+    background-color: salmon;
+    display: flex;
+    // width: 800px;
+    /**
+     * STEP 01
+     */
+    max-width: 800px;
+}
+
+.flex-item {
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    /**
+     * STEP 01
+     * Pero junto con el max-width no respeta el tamaño al reducir la pantalla
+     */
+    width: 200px; 
+}
