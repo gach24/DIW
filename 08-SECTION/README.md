@@ -44,6 +44,13 @@ Más información pincha [aqui](https://css-tricks.com/snippets/css/a-guide-to-f
   - Flex-basis solo funciona sobre el main-axis, de modo que si estoy trabajando con **flex-direction: column**, tendré que especificar width si quiero establecerlo
   - Si utilizo la propiedad **flex** que es el shorthand de [flex-grow][flex-shrink][flex-basis], sobrescribiré width sin darme cuenta
   - En responsive es fácil que cambie **flex-direction** de row a column, si establezco width tendré problemas
+- flex-grow (crecimiento).
+  - Controla cuánto crece un elemento para rellenar el espacio sobrante
+  - Solo se aplica si hay espacio disponible
+  - Es un número positivo, es decir, se especifican las unidades en las que crecera
+  - UNIDAD = ESPACIO DISPONIBLE / SUMA DE FLEX-GROWS EN LA MISMA LÍNEA
+  ![flex-grow](./doc/img/flex-grow.jpg)
+  [Fuente](https://css-tricks.com/flex-grow-is-weird/)
   
 ## Espacio ocupado y espacio disponible
 
