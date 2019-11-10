@@ -1,0 +1,36 @@
+.flex-container {
+    background-color: salmon;
+    height: 900px;
+    display: flex;
+    align-items: flex-start;
+    max-width: 900px;
+    /**
+     * STEP 01
+     */
+    flex-direction: column;
+
+    /** 
+     * STEP 02
+     */
+    align-items: flex-end;
+
+    /**
+     * STEP 03
+     */
+    align-items: center;
+    
+    /**
+     * STEP 04
+     */
+    justify-content: space-between;
+
+}
+
+.flex-item {
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    flex-basis: 200px; 
+    // width: 100px; Flex basis siempre gana
+}

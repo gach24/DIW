@@ -1,9 +1,9 @@
-# ¿Que es FLEXBOX?
+# Que es FLEXBOX
 
 - Flexbox es un módulo completo de layout, es decir, define como se muestran los elementos y como se relacionan con el resto
 - El contenedor va a poder modificar las dimensiones y el orden de los items para acomodarlos según nuestras indicaciones
 
-## ¿Que cosas podemos hacer con flexbox?
+## Que cosas podemos hacer con flexbox
 
 - Alineación vertical
 - Columnas de igual altura independientemente del contenido
@@ -16,7 +16,7 @@
 
 Más información pincha [aqui](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-## ¿Como se respetan el tamaño de los items?
+## Como se respetan el tamaño de los items
 
 - CROSS SIZE (Eje secundario)
   - Si se ha definido (por width o height), este tamaño se respetará
@@ -35,12 +35,16 @@ Más información pincha [aqui](https://css-tricks.com/snippets/css/a-guide-to-f
 - align-content: flex-start|flex-end|center|space-between|space-around|**stretch**
 
 ## Propiedades de los items
+
 - flex-basis. Es el tamaño base que se considera para los cálculos, **no el tamaño definitivo**, es decir, que podrá variar (crecer o encogerse), según los valores de **flex-grow**, **flex-shrink** y **el tamaño del contenedor**
 **Importante:**
   - Flex basis siempre gana a width o height
   - Si no se define **flex-basis** o se establece auto, se tomará en cuenta el valor de width o height, o el tamaño del contenido si no se ha definido. Eso no significa que se respete sino que como flex-basis se tomarán esos
+  - Flex-basis no siempre controla el ancho, en flex-direction: column, flex-basis controla el alto
+  - Flex-basis solo funciona sobre el main-axis, de modo que si estoy trabajando con **flex-direction: column**, tendré que especificar width si quiero establecerlo
+  - Si utilizo la propiedad **flex** que es el shorthand de [flex-grow][flex-shrink][flex-basis], sobrescribiré width sin darme cuenta
+  - En responsive es fácil que cambie **flex-direction** de row a column, si establezco width tendré problemas
   
-
 ## Espacio ocupado y espacio disponible
 
 - **Espacio ocupado:** Es la suma los main-size de todos los flex-items en la misma línea, más los márgenes si los tienen
