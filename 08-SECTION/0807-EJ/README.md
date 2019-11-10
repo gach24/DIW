@@ -1,4 +1,5 @@
 # Ejemplo de cambio en el tamaño de los items
+
 En el ejemplo tenemos incialmente un contenedor de ancho fijo 800px, y cuatro items dentro del contenedor de 200px cada uno.
 
 ```scss
@@ -24,6 +25,7 @@ Si redimensionamos el ancho de la ventana del navegador, el tamaño de la caja n
 ![01-state](./doc/img/01-state.gif)
 
 ## STEP 01
+
 En el primer paso si modificamos el ancho del contenedor de **width: 800px** fijo a una medida más flexible **max-width: 800px**, podemos observar que el ancho del contenedor se reduce, como era de esperar.
 
 ```scss
