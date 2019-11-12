@@ -2,7 +2,6 @@
     background-color: salmon;
     display: flex;
     max-width: 900px;
-    padding: 1rem;
 }
 
 .flex-item {
@@ -10,8 +9,9 @@
     color: white;
     background-color: deepskyblue;
     border: 1px solid;
-    flex-basis: 150px;
-    &:nth-child(5), &:nth-child(7) {
-        flex-shrink: 0; // El elemento 5 no decrece
+    flex-basis: 200px;
+    &:nth-child(3) {
+        flex-shrink: 3;
     }
+
 }
