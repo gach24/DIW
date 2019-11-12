@@ -1,0 +1,18 @@
+.flex-container {
+    background-color: salmon;
+    display: flex;
+    max-width: 900px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.flex-item {
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    flex-basis: 150px;
+    &:nth-child(5), &:nth-child(7) {
+        flex-shrink: 0; // El elemento 5 no decrece
+    }
+}
