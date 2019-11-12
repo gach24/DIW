@@ -1,0 +1,28 @@
+.flex-container {
+    background-color: salmon;
+    display: flex;
+    max-width: 900px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.flex-item {
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    /**
+     * STEP 01
+    flex-basis: 100px
+     */
+}
+
+/**
+ * STEP 02
+ */
+.steptwo {
+    .flex-item {
+        // flex-basis: 100px;
+        min-width: 100px;
+    }
+} 
