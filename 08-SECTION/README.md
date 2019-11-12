@@ -51,6 +51,9 @@ Más información pincha [aqui](https://css-tricks.com/snippets/css/a-guide-to-f
   - UNIDAD = ESPACIO DISPONIBLE / SUMA DE FLEX-GROWS EN LA MISMA LÍNEA
   ![flex-grow](./doc/img/flex-grow.jpg)
   [Fuente](https://css-tricks.com/flex-grow-is-weird/)
+- flex-shrink (estrechamiento)
+  - Si el espacio disponible es negativo (el tamaño del contenedor es menor a la suma de los tamaños de los items), por defecto los items se encogen en proporciones iguales para caber en una sola línea, pero respetando el contenido o si tiene establecido min-width o min-height
+  - UNIDAD = ESPACIO DISPONIBLE (SERÁ NEGATIVO) / SUMA DE FLEX-SHRINK EN LA MISMA LÍNEA
   
 ## Espacio ocupado y espacio disponible
 
