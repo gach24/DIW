@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="col"></section>
+        <aside class="col"></aside>
+    </main>
+    <ol>
+        <li>Width section: <span></span></li>
+        <li>Width aside: <span></span></li>
+    </ol>
+    <script>
+        /** 
+         * VERSION 2.0
+         */
+        var cols  = document.querySelectorAll('.col');
+        var spans = document.querySelectorAll('span');
+
+        function getSize() {
+            cols.forEach( (col, i) => spans[i].textContent = col.offsetWidth + "px" );
+        }
+
+        document.addEventListener('DOMContentLoaded', getSize);
+        window.addEventListener('resize', getSize);
+
+
+        /**
+         * VERSION 1.0
+        getSize();
+
+        function getSize() {
+            var n = 0;
+            for (var node of document.querySelectorAll('.col')) {
+                document.querySelectorAll('span')[n].textContent = node.offsetWidth + "px";
+                n++;
+            }
+        }
+        window.onresize = function (event) {
+            getSize();
+        }
+        */
+    </script>
+</body>
+
+</html>
