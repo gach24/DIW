@@ -1,0 +1,41 @@
+$gray-input: lighten(gray, 20%);
+
+.input-wrapper {
+    border: 1px solid $gray-input;
+    max-width: 26rem;
+    margin: 3rem auto;
+
+    /**
+     * STEP 01
+     * Display flex nos arregla tambien la algura del icono 
+     */ 
+     display: flex;
+     /**
+      * STEP 03
+      * Para ver las esquinas redondeadas, también es necesario esconder lo que sobresale
+      */
+     border-radius: .5rem;
+     overflow: hidden;
+}
+
+.search {
+    background-color: $gray-input;
+    color: white;
+    padding: 0.5rem 0.8rem;
+
+}
+
+input {
+    padding: 0.5em;
+    /** 
+     * STEP 02
+     */
+     flex-grow: 1;
+
+     /**
+      *
+      * El input tiene un tamaño mínimo por defecto si minimizo la pantalla deja de verse el icono ...
+      * Reseteo el min-width
+      */
+     min-width: 0;
+}
