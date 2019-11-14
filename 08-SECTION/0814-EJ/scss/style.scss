@@ -1,0 +1,28 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: salmon;
+}
+
+main {
+    flex-grow: 1;
+    padding: 3rem 5%;
+    text-align: justify;
+
+    /**
+     * STEP 01
+     */
+    // font-size: 3em;
+}
+
+footer {
+    background-color: deepskyblue;
+}
+
+header, footer {
+    height: 7rem;
+}
