@@ -1,0 +1,32 @@
+header { background-color: salmon; }
+footer { background-color: deepskyblue; }
+header, footer { 
+    height: 7rem; 
+    /** 
+     * STEP 02
+     * Para que no encojan
+     */
+     flex-shrink: 0;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    // min-height: 100vh;
+    /** 
+     * STEP 01
+     * Quito el min-height
+     */
+    height: 100vh;
+
+
+}
+
+main {
+    flex-grow: 1;
+
+    /**
+     * STEP 03
+     * Para que solo haga scroll el main
+     */
+    overflow: auto;
+}
