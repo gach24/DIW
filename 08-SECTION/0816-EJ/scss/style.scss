@@ -1,0 +1,44 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header, footer { 
+    background-color: black;
+    color: white;
+    height: 7rem; 
+    flex-shrink: 0;
+}
+
+nav, aside {
+    background-color: gray;
+    flex: 0 0 20%;
+}
+
+article {
+    flex-grow: 1;
+}
+
+#main {
+    flex-grow: 1;
+    display: flex;
+}
+
+ul {
+    padding: 2em;
+    list-style-type: square;
+    li {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main {
+        flex-direction: column;
+    }
+    nav {
+        flex: 0 1 20%;
+        min-height: 4rem;
+    }
+}
