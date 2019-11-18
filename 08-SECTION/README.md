@@ -14,7 +14,8 @@
 
 ![ejes-flexbox](./doc/img/ejes-flexbox.jpg)
 
-Más información pincha [aqui](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+Más información pincha [aqui](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
+[Otro link intersante](https://codepen.io/enxaneta/full/adLPwv)
 
 ## Como se respetan el tamaño de los items
 
@@ -54,6 +55,10 @@ Más información pincha [aqui](https://css-tricks.com/snippets/css/a-guide-to-f
 - flex-shrink (estrechamiento)
   - Si el espacio disponible es negativo (el tamaño del contenedor es menor a la suma de los tamaños de los items), por defecto los items se encogen en proporciones iguales para caber en una sola línea, pero respetando el contenido o si tiene establecido min-width o min-height
   - UNIDAD = ESPACIO DISPONIBLE (SERÁ NEGATIVO) / SUMA DE FLEX-SHRINK EN LA MISMA LÍNEA
+- order
+  - Cambia el orden de colocación que correspondería según su orden en el HTML (parecido a como funciona z-index).
+  - Valores positivos y negativos
+  - Positivos al final de la pila, negativos al principio
   
 ## Espacio ocupado y espacio disponible
 

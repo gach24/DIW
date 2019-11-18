@@ -30,6 +30,4 @@ Alineación de las **filas** respecto del eje transversal. **Solo con más de un
 align-content: flex-start|flex-end|center|space-between|space-around|**stretch**
 [Ejemplos](./doc/align-content.md)
 
-
 [Link intersante](http://w3.unpocodetodo.info/css3/flex-box.php)
-[Otro link intersante](https://codepen.io/enxaneta/full/adLPwv)
