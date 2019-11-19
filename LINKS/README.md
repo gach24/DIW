@@ -27,3 +27,7 @@
 ## TUTORIALES HTML Y CSS
 
 1. [YOUTUBE DARK CODE](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw) Canal de Youtube con tutoriales sobre HTML y CSS.
+
+## JAVASCRIPT
+
+1. [JAVASCRIPT EXAMEN](http://perfectionkills.com/javascript-quiz/)
