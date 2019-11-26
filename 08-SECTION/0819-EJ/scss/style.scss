@@ -1,0 +1,66 @@
+.char-container {
+    max-width: 35em;
+    margin: 5em auto 0;
+    // background-color: gray;
+    position: relative
+} 
+
+.chart {
+    height: 14em;
+    border-bottom: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    &::before {
+        content:'';
+        display: block;
+        height: 1px;
+        background-color: #ddd;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        z-index: -1;
+    }
+    &::after {
+        content:'';
+        display: block;
+        height: 1px;
+        background-color: #ddd;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        z-index: -1;
+    }    
+}
+
+.bar {
+    flex-basis: 15%;
+    background-color: red;
+    height: 7rem;
+    &.blue {
+        background-color: #6EC5CC;
+    }
+    &.purple {
+        background-color: #B87898;
+    }
+    &.green {
+        background-color: #ABC111;
+    }
+}
+
+.y-value {
+    position: absolute;
+    width: 3em;
+    left: -3em;
+    &.value-50 {
+        top: 50%;
+        margin-top: -.5em;
+    }
+    &.value-0 {
+        top: 100%;
+        margin-top: -.5em;
+    }    
+
+}

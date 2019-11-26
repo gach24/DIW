@@ -1,0 +1,45 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5em auto;
+}
+
+.info-box {
+    background-color: #eee;
+    flex-basis: 48%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon, .title, .text-container {
+    background-color: white;
+    border: 1px solid #DDD;
+    padding: .8em;
+}
+
+.icon, .title, .text-container, .info-box {
+    border-radius: .5em;
+}
+
+.icon, .title>span {
+    color: red;
+}
+
+.text-container {
+    margin-top: .8em;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+}
+
+.title {
+    flex-grow: 1;
+    margin-left: .5em;
+    >span {
+        margin-left: 1em;
+    }
+}
