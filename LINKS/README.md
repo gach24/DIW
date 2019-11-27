@@ -8,6 +8,7 @@
 
 1. [Trabajar con git: fork y pull request](https://github.com/firstcontributions/first-contributions). Enlace para apreder a trabajar con forks en github y hacer pull requests
 2. [Para generar .gitignore automáticamente](http://gitignore.io/). Página donde nos genera .gitignore automáticamente, solamente seleccionando la tecnología en la que trabajas
+3. [Para aprender git de forma gráfica](https://learngitbranching.js.org/). Página donde podemos aprender git de forma gráfica
 
 ## PROTOTIPADO
 
@@ -31,3 +32,8 @@
 ## JAVASCRIPT
 
 1. [JAVASCRIPT EXAMEN](http://perfectionkills.com/javascript-quiz/)
+
+## GENERADORES DE IMAGENES
+
+1. [Genera imagenes aleatorias e incluso tiene una API](https://picsum.photos/)
+2. [Genera imagenes con texto](https://dummyimage.com/)
