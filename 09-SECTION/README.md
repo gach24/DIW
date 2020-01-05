@@ -25,3 +25,4 @@ Sistema de rejillas en dos dimensiones (a diferencia de flexbox que solo actua s
 ## display grid
 
 En cuanto declaro **display: grid** o **display: inline-grid** los hijos directos de ese elemento pasan a ser grid items
+[0901-EJ](./0901-EJ/)
