@@ -34,3 +34,5 @@ Establece el tamaño (ancho o alto) mínimo y máximo que quiero que tengan las 
 ```
 
 ![01-state](./doc/img/01-state.gif)
+
+ Nota: Los fr no se pueden poner en **grid-gap**, ni como **minimo en la función minmax()**
