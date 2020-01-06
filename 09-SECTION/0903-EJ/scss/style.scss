@@ -30,3 +30,47 @@ body {
     grid-row-gap: .5rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+/**
+ * Step 01: Diferentes proporciones
+
+.grid {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: .5rem;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+ */
+
+/**
+ * Step 02: Combinación de unidades de medida fijas y fr
+
+ .grid {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: .5rem;
+    grid-template-columns: 10rem 1fr 1fr;
+}
+ */
+
+/**
+ * Step 03: Combinación de unidades de medida fr y %
+ */
+ .grid {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: .5rem;
+    grid-template-columns: 20% 1fr;
+}
+
+/**
+ * Step 04: Unidades fr en altura
+ */
+.grid {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: .5rem;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-rows: 10rem 1fr 1fr 1fr; // Es necesario establecer altura
+    min-height: 200vh;
+}
