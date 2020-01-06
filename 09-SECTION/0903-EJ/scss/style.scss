@@ -1,0 +1,32 @@
+body {
+    font: 3em sans-serif;
+    background-color: rgba(0,0,0,.2);
+    color: white;
+}
+
+.grid {
+    padding: 1rem;
+}
+
+.grid-item {
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.grid-item:nth-child(2n) {
+    background-color: #1A83B5;
+}
+
+.grid-item:nth-child(2n + 1) {
+    background-color: #37A8E0;
+}
+
+/********************************************************************/
+
+
+.grid {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: .5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
