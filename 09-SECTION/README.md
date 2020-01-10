@@ -31,3 +31,7 @@ En cuanto declaro **display: grid** o **display: inline-grid** los hijos directo
 
 Debemos crear el grid explicitamente, es decir, al contenedor grid le indico como deben ser las filas y las columnas (existen múltiples sintaxis y formas de hacerlo)
 [Ejemplo 02](./0902-EJ/)
+
+## Posicionamiento de los grid-items
+
+La enorme potencia de **Grid Layout** en parte viene dada porque una vez generada la regilla, puedo colocar los items donde quiera dentro de esta (Defino un grid donde luego puedo colocar items)
