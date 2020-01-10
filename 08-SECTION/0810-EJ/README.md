@@ -1,4 +1,4 @@
-# Propiedad flex-shrink
+# Comportamiento del widht con flex-basis
 
 En el ejemplo incialmente partimos de un contenedor flex de 900px
 
