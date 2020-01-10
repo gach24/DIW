@@ -1,0 +1,51 @@
+body {
+    font: 3em sans-serif;
+    background-color: rgba(0,0,0,.2);
+    color: white;
+}
+
+.grid {
+    padding: 1rem;
+}
+
+.grid-item {
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.grid-item:nth-child(2n) {
+    background-color: #1A83B5;
+}
+
+.grid-item:nth-child(2n + 1) {
+    background-color: #37A8E0;
+}
+
+/********************************************************************/
+
+.grid {
+    display: grid;
+    grid-gap: .5rem;
+    // grid-template-columns: repeat(3, 1fr);
+    /**
+     * Los valores auto-fill y auto-fit sustituyen el número de columnas/filas en la función repeat(), por un 
+     * número determinado de columnas, este número vendrá calculado por el número de columnas que caben para la * medida dada en la función repeat()
+     */
+    // grid-template-columns: repeat(auto-fill, 15rem);
+    /** 
+     * Con auto-fit en este ejemplo tendríamos el mismo comportamiento
+     */
+    // grid-template-columns: repeat(auto-fit, 15rem);
+
+     /*
+      * Podemos combinarlo con la función mimmax()
+      */
+    // grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+
+    // grid-template-columns: repeat(2, minmax(8rem, 1fr)) repeat(auto-fill, minmax(15rem, 2fr)); 
+    // grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)) repeat(auto-fill, minmax(15rem, 2fr));
+    // grid-template-columns: repeat(auto-fill, minmax(150px, 250px)); // Siempre coge el máximo por lo que es equivalente a grid-template-columns: repeat(auto-fill, 250px);
+    // grid-template-columns: repeat(auto-fill, 150px 250px); // Funciona en chrome pero no en firefox
+
+
+}
