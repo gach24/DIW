@@ -27,8 +27,8 @@ body {
     display: grid;
     gap: .5rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 5rem;
+    // grid-auto-columns: 1fr;
+    // grid-auto-rows: 5rem;
 }
 
 
@@ -119,15 +119,15 @@ body {
 
 
 /** 
- * Step 11. Los items pueden superponerse si establezco las mismas coordenas a dos o más items
+ * Step 11. Los items pueden superponerse si establezco las mismas coordenas a dos o más items 
+.grid-item.item1 {
+    grid-area: 1/2/3/-1;
+}
+
+.grid-item.item6 {
+    grid-area: 1/2/3/-1;
+    background-color: rgba(0,255,0, .2);
+}
  */
-.item1 {
-    grid-area: 1/2/3/-1;
-}
-
-.item6 {
-    grid-area: 1/2/3/-1;
-}
-
 
 
