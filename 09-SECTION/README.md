@@ -35,12 +35,8 @@ Debemos crear el grid explicitamente, es decir, al contenedor grid le indico com
 La enorme potencia de **Grid Layout** en parte viene dada porque una vez generada la regilla, puedo colocar los items donde quiera dentro de esta (Defino un grid donde luego puedo colocar items)
 
 ## Líneas nombradas
-<<<<<<< HEAD
 
 Dentro del posicionamiento de los grid-items podemos utilizar líneas nombradas, esto es una gran ventaja por:
-=======
-Dentro del posicionamiento de los grid-items podemos utilizar líneas nombradas, esto es una gran ventaja por: 
->>>>>>> 8a7d532c3efa66a84337153794fae2ba2f1b1b2f
 
 1. Me ayudan a recordar como van los tracks en layouts complejos
 2. En responsive me evitan sobreescribir la colocación de algunos items
