@@ -25,13 +25,18 @@ Sistema de rejillas en dos dimensiones (a diferencia de flexbox que solo actua s
 ## display grid
 
 En cuanto declaro **display: grid** o **display: inline-grid** los hijos directos de ese elemento pasan a ser grid items
-[0901-EJ](./0901-EJ/)
 
 ## Definiendo tracks en el grid
 
 Debemos crear el grid explicitamente, es decir, al contenedor grid le indico como deben ser las filas y las columnas (existen múltiples sintaxis y formas de hacerlo)
-[Ejemplo 02](./0902-EJ/)
 
 ## Posicionamiento de los grid-items
 
 La enorme potencia de **Grid Layout** en parte viene dada porque una vez generada la regilla, puedo colocar los items donde quiera dentro de esta (Defino un grid donde luego puedo colocar items)
+
+## Líneas nombradas
+Dentro del posicionamiento de los grid-items podemos utilizar líneas nombradas, esto es una gran ventaja por: 
+
+1. Me ayudan a recordar como van los tracks en layouts complejos
+2. En responsive me evitan sobreescribir la colocación de algunos items
+3. Si cambia el número de tracks **no tengo que reposicionar elementos**
