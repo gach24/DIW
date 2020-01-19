@@ -41,3 +41,21 @@ Dentro del posicionamiento de los grid-items podemos utilizar líneas nombradas,
 1. Me ayudan a recordar como van los tracks en layouts complejos
 2. En responsive me evitan sobreescribir la colocación de algunos items
 3. Si cambia el número de tracks **no tengo que reposicionar elementos**
+
+## Algoritmo de autoplacement
+
+- Reglas que controlan dónde se colocan los items cuando no establecemos su posición o por otro, pierde su sitio natural
+- Aunque no les dé información de donde colocarse, ellos buscarán sitio en celdas libres o crearán los tracks necesarios para hacerlo
+- Lo primero que determina como funciona autoplacement es el valor de la propiedad **grid-auto-flow**
+
+### Propiedad grid-auto-flow
+
+Determina dos aspectos:  
+
+- Dirección: Define la dirección en la que el grid va a crecer si necesita colocar items por auto-placement
+  - Row (por defecto)
+  - Column
+- Modo: Determina si el algoritmo intentará rellenar huecos vacíos para colocar items por auto-placement
+  - sparse (por defecto)
+  - dense
+  
