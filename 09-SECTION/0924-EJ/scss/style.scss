@@ -1,0 +1,65 @@
+body {
+    font: 3em sans-serif;
+    background-color: rgba(0,0,0,.2);
+    color: white;
+}
+
+.grid {
+    padding: 1rem;
+    // border: 2px solid white;
+    // margin: 1rem;
+}
+
+.grid-item {
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.grid-item:nth-child(2n) {
+    background-color: #1A83B5;
+}
+
+.grid-item:nth-child(2n + 1) {
+    background-color: #37A8E0;
+}
+
+/********************************************************************/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 6rem;
+    gap: .2rem;
+    // grid-auto-flow: dense;
+}
+
+/**
+ * Step 1: Adivina que pasa
+.item7 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+ */
+
+/**
+ * Step 2: Adivina que pasa
+.item9 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+ */
+
+/**
+  * Step 3: Adivina que pasa
+.item8 {
+    grid-column: 2 / span 2;
+}
+ */
+
+/**
+ * Step 4: Adivina que pasa
+.item11 {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+ */
