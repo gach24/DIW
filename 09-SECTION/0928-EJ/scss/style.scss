@@ -1,0 +1,20 @@
+body {
+    background-color: #2D2D2D;
+    color: #ACB4B4;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    grid-auto-rows: 190px;
+}
