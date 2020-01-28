@@ -58,4 +58,10 @@ Determina dos aspectos:
 - Modo: Determina si el algoritmo intentará rellenar huecos vacíos para colocar items por auto-placement
   - sparse (por defecto)
   - dense
+
+## Indice de ejemplos
+
+1. [Ejemplo de conceptos básicos](./0901-EJ/)
+2. [Ejemplo definiendo grid explícitamente](./0902-EJ/)
+3. [Ejemplo: Unidad de medida FR (Fraction Unit)](./0903-EJ/)
   
