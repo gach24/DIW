@@ -1,0 +1,99 @@
+.box {
+    height: 20rem;
+    width: 20rem;
+    background-color: deepskyblue;
+    margin: 10rem auto 0;
+    color: white;
+    text-align: center;
+    line-height: 20rem;
+    font-size: 2rem;
+}
+
+/**
+ *  
+.box {
+    transform: translateX(200px);
+    transform: translateX(-200px);
+    transform: translateY(200px);
+    transform: translateY(-200px);
+    transform: translate(100px, 100px);    
+}
+ */
+
+
+ /**
+  *
+
+.box {
+    transform: skew(20deg);
+    transform: skew(-20deg);    
+}
+ */
+
+/**
+ *
+
+.box {
+    transform-origin: top left;
+    transform: rotate(-50deg);
+    transform: translateX(50);
+    // z-index: -1;
+}
+  */
+
+/**
+ *
+.box {
+    transform: scale(1.5); // No tengo que cambiar el lineheigth
+    transform: scale(0.5);
+}
+ */
+
+/**
+ *
+
+.box {
+    transition: all 5s ease-in-out;
+    &:hover {
+        background-color: lime;
+    }
+}
+ */
+
+/**
+ *
+
+.box {
+    transition: color 1s ease-in-out, background-color 2s ease;
+    &:hover {
+        color: gray;
+        background-color: salmon;
+    }
+} 
+ */
+ 
+
+/**
+ * 
+
+.box {
+    transition: transform 3s ease;
+    &:hover {
+        transform: scale(1.5);
+    }
+} 
+
+ */
+
+ /**
+.box {
+    transition: all 2s ease, font-size 10s linear;
+    &:hover {
+        color: grey;
+        background-color: blue;
+        transform: scale(1.5);
+        font-size: 8em;
+        rotate: 720deg;
+    }
+}
+*/
