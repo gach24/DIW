@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    
     <header>
         <nav>
             <div class="prev nav-control">
@@ -23,6 +24,7 @@
             </div>
         </nav>
     </header>
+    
 
     <section class="character">
         <!-- Contenido ilustraciones -->
@@ -68,6 +70,26 @@
 
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+       
+        $(function() {
+            var i = 1;
+            $('.nav-control').on('click', function() {
+                if ($(this).hasClass('prev') && i > 1) {
+                    i--;
+                }
+                if ($(this).hasClass('next') && i < $('.picture-container').length) {
+                    i++;
+                }
+
+                $('.picture-container, .description-container').removeClass('displayed');
+                $('.picture-' + i).addClass('displayed');
+                $('.description-' + i).addClass('displayed');
+            })
+            
+        })
+    </script>
 </body>
 
 </html>

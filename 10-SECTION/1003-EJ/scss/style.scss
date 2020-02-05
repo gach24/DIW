@@ -1,0 +1,100 @@
+body {
+    // font-family: "Monserrat";
+    line-height: 1.5;
+    // color: white;
+} 
+
+h3 {
+    // font-family: 'Nolito';
+    font-size: 2em;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+section {
+   height: 100vh;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+
+.character-half {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.character-picture {
+    background-image: url(../img/pattern-light.jpg);
+    left: 0;
+}
+
+.character-description {
+    background-color: #429997;
+    // left: 50%;
+    right: 0;
+}
+
+.description-container {
+    width: 80%;
+    margin-left: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translate(50vw, -50%);
+    &.displayed {
+        transform: translate(0, -50%);;
+    }
+}
+
+.picture-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    
+    @for $var from 1 through 4 {
+        &.picture-#{$var} {
+            background-image: url(../img/character-#{$var}.svg);
+        }
+    }
+
+    transform: translateY(100vh);
+    &.displayed {
+        transform: translateY(0);
+    }
+}
+
+header {
+    position: relative;
+    z-index: 1;
+
+    nav {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        .nav-control {
+            cursor: pointer;
+            height: 3rem;
+            width: 3rem;
+            border: 1px solid white;
+            text-align: center;
+            line-height: 3rem;
+            font-size: 1.5em;
+            display: inline-block;
+            transition: all .5s ease;
+            &:hover {
+                background-color: white;
+                color: red;
+            }
+        }
+    }
+}
