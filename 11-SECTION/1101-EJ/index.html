@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creando nuestra primera página utilizando grid</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 
+        Rompemos regla de bootstrap
+        Debemos incluir el contenido en el grid (filas y columnas)
+
+    <div class="container">
+        <h1>Hola mundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam, quod perspiciatis rerum recusandae soluta possimus placeat laborum labore vero, officiis totam tempora, sint natus hic. Minus, ea id. Hic modi, laborum delectus id quia mollitia sint voluptatum sequi asperiores, itaque possimus at tenetur blanditiis soluta autem a corporis voluptatem?</p>
+    </div>
+    -->
+ 
+    
+    <!-- El container es el contenedor principal, en el iran todas las filas y columnas-->
+    <!-- El .container centra nuestra página, .container-fluid? -->
+    <div class="container">
+        <!-- STEP 01 -->
+        <!-- Las filas (row) son grupos HORIZONTALES de columnas -->
+        <div class="row">
+            <!-- Todo el contendio debe ir columnas (col) -->
+            <!-- Y las columnas deben ir directamente dentro de las filas (row)-->
+            <div class="col">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam, quod perspiciatis rerum recusandae soluta possimus placeat laborum labore vero, officiis totam tempora, sint natus hic. Minus, ea id. Hic modi, laborum delectus id quia mollitia sint voluptatum sequi asperiores, itaque possimus at tenetur blanditiis soluta autem a corporis voluptatem?</p>
+            </div>
+        </div>
+
+        <!-- STEP 02 -->
+        <div class="row">  
+            <!-- Si no indico nada acerca del número de columnas estas se reparten el espacio -->
+            <!-- Como hay tres columnas cada una ocupará 4 de las 12 disponibles -->
+            <div class="col">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam, quod perspiciatis rerum recusandae soluta possimus placeat laborum labore vero, officiis totam tempora, sint natus hic. Minus, ea id. Hic modi, laborum delectus id quia mollitia sint voluptatum sequi asperiores, itaque possimus at tenetur blanditiis soluta autem a corporis voluptatem?</p>
+            </div>
+            <div class="col">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam, quod perspiciatis rerum recusandae soluta possimus placeat laborum labore vero, officiis totam tempora, sint natus hic. Minus, ea id. Hic modi, laborum delectus id quia mollitia sint voluptatum sequi asperiores, itaque possimus at tenetur blanditiis soluta autem a corporis voluptatem?</p>
+            </div>
+            <div class="col">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam, quod perspiciatis rerum recusandae soluta possimus placeat laborum labore vero, officiis totam tempora, sint natus hic. Minus, ea id. Hic modi, laborum delectus id quia mollitia sint voluptatum sequi asperiores, itaque possimus at tenetur blanditiis soluta autem a corporis voluptatem?</p>
+            </div>
+        </div>   
+        
+        <!-- STEP 03-->
+        <div class="row">  
+            <!-- También puedo indicar el número de columnas que quiero que ocupe cada elemento -->
+            <div class="col-12">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam, quod perspiciatis rerum recusandae soluta possimus placeat laborum labore vero, officiis totam tempora, sint natus hic. Minus, ea id. Hic modi, laborum delectus id quia mollitia sint voluptatum sequi asperiores, itaque possimus at tenetur blanditiis soluta autem a corporis voluptatem?</p>
+            </div>
+            <!-- Si sobrepasa las 12 disponibles el elemento se desplaza hacia abajo -->
+            <div class="col-6">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam, quod perspiciatis rerum recusandae soluta possimus placeat laborum labore vero, officiis totam tempora, sint natus hic. Minus, ea id. Hic modi, laborum delectus id quia mollitia sint voluptatum sequi asperiores, itaque possimus at tenetur blanditiis soluta autem a corporis voluptatem?</p>
+            </div>
+            <div class="col-6">
+                <h1>Hola mundo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam, quod perspiciatis rerum recusandae soluta possimus placeat laborum labore vero, officiis totam tempora, sint natus hic. Minus, ea id. Hic modi, laborum delectus id quia mollitia sint voluptatum sequi asperiores, itaque possimus at tenetur blanditiis soluta autem a corporis voluptatem?</p>
+            </div>
+        </div>  
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
