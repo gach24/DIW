@@ -98,3 +98,7 @@ header {
         }
     }
 }
+
+.picture-container, .description-container {
+    transition: transform 1s ease;
+}
