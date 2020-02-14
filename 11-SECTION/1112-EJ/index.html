@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>1112-EXAMPLE: Estilos para títulos</title>
+    <title>1112-EXAMPLE: Ejemplo resumen con columnas ocultas</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -13,47 +13,64 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container">
+        <header class="row">
             <div class="col">
-                <h1>Encabezado H1 <small class="text-muted">Texto secundario</small></h1>
-                <h2>Encabezado H2 <small class="text-muted">Texto secundario</small></h2>
-                <h3>Encabezado H3 <small class="text-muted">Texto secundario</small></h3>
-                <h4>Encabezado H4 <small class="text-muted">Texto secundario</small></h4>
-                <h5>Encabezado H5 <small class="text-muted">Texto secundario</small></h5>
-                <h6>Encabezado H6 <small class="text-muted">Texto secundario</small></h6>
+                <h1>HEADER</h1>
             </div>
-        </div>
-        <hr>
-        <div class="row">
+        </header>
+        <section class="contenedor-main row">
+            <main class="col-md-8">
+                <h2>MAIN</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </main>
+    
+            <aside class="col-md-4 align-self-center">
+                <h3>ASIDE</h3>
+            </aside>
+        </section>
+    
+        <section class="row widgets justify-content-between">
+            <div class="col-12 col-md-4 col-lg-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+    
+            <div class="col-12 col-md-4 col-lg-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+    
+            <div class="col-12 col-md-4 col-lg-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+        </section>
+    
+        <footer class="row">
             <div class="col">
-                <p class="h1">Parrafo con estilo de encabezado H1</p>
-                <p class="h2">Parrafo con estilo de encabezado H2</p>
-                <p class="h3">Parrafo con estilo de encabezado H3</p>
-                <p class="h4">Parrafo con estilo de encabezado H4</p>
-                <p class="h5">Parrafo con estilo de encabezado H5</p>
-                <p class="h6">Parrafo con estilo de encabezado H6</p>
+                <h4>Footer</h4>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <h1 class="display-1">Encabezado display</h1>
-                <h1 class="display-2">Encabezado display</h1>
-                <h1 class="display-3">Encabezado display</h1>
-                <h1 class="display-4">Encabezado display</h1>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <p class="lead"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius molestias deleniti iure, sapiente consequatur libero? </p>
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius molestias deleniti iure, sapiente consequatur libero? </p>                
-            </div>
-        </div>
-    </div>
-
-
+        </footer>
+    </div>    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
