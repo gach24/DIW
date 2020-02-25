@@ -1,0 +1,16 @@
+body {
+    padding: 54px;
+}
+
+.nav {
+    a {
+        color: #fff;
+        padding: 15px;
+        // display: inline-block;
+        &:hover {
+            background-color: #000;
+
+        }
+    }
+
+}
