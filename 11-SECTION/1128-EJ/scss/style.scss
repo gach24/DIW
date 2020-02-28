@@ -1,0 +1,70 @@
+body {
+    background-color: #f2f2f2;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/** BARRA LATERAL **/
+.barra-lateral {
+    background-color: #262a34;
+    color: #fff;
+    min-width: 300px;
+    min-height: 100vh;
+    padding: 0;
+
+    .logo {
+        background-color: #0275bd;
+        h2 {
+            font-size: 2em;
+            font-weight: 300;
+        }
+    }
+
+    nav {
+        a {
+            font-weight: 500;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            // color: white;
+            &:hover {
+                background-color: #35ae6b;
+            }
+        }
+
+    }
+}
+
+/** MAIN **/
+main {
+    textarea, input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    }
+    textarea {
+        height: 400px;
+        min-height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .barra-lateral {
+        min-width: auto;
+        .logo { display: none; }
+        nav a span {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .barra-lateral {
+        min-height: auto;
+    }
+
+    main button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-sm-auto barra-lateral">
+                <header class="logo mb-1 ">
+                    <h2 class="py-3 m-0 text-center">Dashboard</h2>
+                </header>
+                <nav class="d-flex flex-sm-column justify-content-center">
+                    <a href="#" class="p-4 text-white"><i class="fa fa-home mr-xl-3"></i><span>Inicio</span></a>
+                    <a href="#" class="p-4 text-white"><i class="fa fa-file-text mr-xl-3"></i><span>Entradas</span></a>
+                    <a href="#" class="p-4 text-white"><i class="fa fa-users mr-xl-3"></i><span>Usuarios</span></a>
+                    <a href="#" class="p-4 text-white"><i class="fa fa-cogs mr-xl-3"></i><span>Configuracion</span></a>
+                    <a href="#" class="p-4 text-white"><i class="fa fa-sign-out mr-xl-3"></i><span>Salir</span></a>
+                </nav>  
+            </aside>
+            <main class="col main p-4">
+                <div class="row">
+                    <div class="col-lg-7 widget px-5">
+                        <div class="mb-4">
+                            <h3 class="font-weight-bold h2 mb-2">Nueva entrada</h3>
+                            <form action="">
+                                <input type="text" placeholder="Titulo de la entrada" class="font-weight-bold">
+                                <textarea placeholder="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, illum assumenda nobis sint facilis excepturi. Eligendi quam earum ipsam consequatur.</textarea>
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn btn-primary"><i class="fa fa-pencil-square-o"></i>Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 shadow px-5">
+                        <div class="">
+                            <h3 class="font-weight-bold h2 mb-2">Estadisticas</h3>
+                            <div class="d-flex flex-wrap text-center">
+                                <div class="box bg-white border py-4 px-2">
+                                    <h3 class="h5 text-success">15,236</h3>
+                                    <p class="text-muted">Visitas</p>
+                                </div>
+                                <div class="box bg-white border py-4 px-2">
+                                    <h3 class="h5 text-success">1,200</h3>
+                                    <p class="text-muted">Registros</p>
+                                </div>
+                                <div class="box bg-white border py-4 px-2">
+                                    <h3 class="h5 text-success">160,236€</h3>
+                                    <p class="text-muted">Ingresos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
