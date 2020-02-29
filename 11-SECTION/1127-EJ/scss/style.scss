@@ -1,0 +1,30 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+header {
+    margin-top: 30px;
+    .logo {
+        min-height: 80px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    nav {
+        a {
+            padding: 0 30px;
+            color: white;
+            &.c-1 { background-color: #3da5e2; }
+            &.c-2 { background-color: #005385; }
+            &.c-3 { background-color: #003855; }
+            &.c-1:hover { background-color: #1ba0ef; }
+            &.c-2:hover { background-color: #00426a; }
+            &.c-3:hover { background-color: #002d44; }
+            span { font-weight: 600;}
+        }
+    }
+}
+
+
